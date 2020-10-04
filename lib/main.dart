@@ -1,10 +1,9 @@
-import 'package:bytebank/screen/contact_form.dart';
-import 'package:bytebank/screen/contact_list.dart';
 import 'package:flutter/material.dart';
-
 import 'screen/dashboard.dart';
 
-void main() => runApp(ByteBank());
+void main() {
+  runApp(ByteBank());
+}
 
 class ByteBank extends StatelessWidget {
   @override
