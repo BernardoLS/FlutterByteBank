@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screen/dashboard.dart';
+import 'screens/dashboard.dart';
 
 void main() {
   runApp(ByteBank());
