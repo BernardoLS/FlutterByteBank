@@ -12,7 +12,6 @@ class _TransactionListState extends State<TransactionList> {
 
   @override
   Widget build(BuildContext context) {
-    transactions.add(Transaction(100.0, Contact(0, 'Alex', 1000)));
     return Scaffold(
       appBar: AppBar(
         title: Text('Transactions'),

@@ -23,8 +23,8 @@ class Dashboard extends StatelessWidget {
                   _showContactList(context);
                 }),
                 _FeatureItem(
-                  'Transaction Feed',
-                  Icons.description,
+                  null,
+                  null,
                   onClick: () {
                     _showTransactionList(context);
                   },
@@ -41,7 +41,9 @@ class _FeatureItem extends StatelessWidget {
   final IconData icon;
   final Function onClick;
 
-  const _FeatureItem(this.title, this.icon, {@required this.onClick});
+  const _FeatureItem(this.title, this.icon, {@required this.onClick})
+      : assert(icon != null),
+        assert(onClick != null);
 
   @override
   Widget build(BuildContext context) {
